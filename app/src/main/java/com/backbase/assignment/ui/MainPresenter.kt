@@ -17,7 +17,8 @@ class MainPresenter(
 
     override fun onViewCreated() {
 
-        loadWeather()
+        view?.displayWeatherState(moviePresenter.showAllSearch()?.page.toString())
+
     }
 
     override fun onLoadWeatherTapped() {
@@ -32,7 +33,7 @@ class MainPresenter(
 
 
         // Make sure to call the displayWeatherState on the view
-        view?.displayWeatherState()
+        view?.displayWeatherState("S")
     }
 
 }

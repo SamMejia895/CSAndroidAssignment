@@ -9,8 +9,8 @@ import com.backbase.assignment.ui.di.DependencyInjectorImpl
 
 
 class MainActivity : AppCompatActivity() , MainContract.View {
-    internal lateinit var imageView: ImageView
-    internal lateinit var button: Button
+//    internal lateinit var imageView: ImageView
+  //  internal lateinit var button: Button
 
     // 2
     internal lateinit var presenter: MainContract.Presenter
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() , MainContract.View {
 
 
 
-    override fun displayWeatherState() {
+    override fun displayWeatherState(s:String) {
         this.presenter = presenter
     }
 

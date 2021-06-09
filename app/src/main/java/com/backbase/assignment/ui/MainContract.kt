@@ -9,6 +9,6 @@ interface MainContract {
     }
 
     interface View : BaseView<Presenter> {
-        fun displayWeatherState()
+        fun displayWeatherState(page:String)
     }
 }
